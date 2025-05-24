@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prabakaran S | Biomedical Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Header -->
+  <header>
+  <h1>Prabakaran S</h1>
+  <nav class="nav-bar">
+    <ul class="nav-links">
+    <a href="#home">Home</a> <a href="#about">About</a> <a href="#accomplishments">Accomplishments</a> <a href="#projects">Projects</a> <a href="#skills">Skills</a> <a href="#quotes">Quotes</a> <a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Hero -->
+  <section id="home" class="hero visible">
+    <div class="hero-left">
+      <p class="tagline">I'm</p>
+      <h1 class="name">Prabakaran S</h1>
+      <h2 class="title">Biomedical Engineer</h2>
+      <p class="desc"><span id="typed-text"></span><span class="cursor">|</span></p>
+      <div class="hero-buttons">
+        <a href="Prabakaran_Resume.pdf" download class="hero-btn">Resume</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="profile.jpg" alt="Prabakaran S" class="hero-img" />
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About</h2>
+    <div class="about-content">
+      <img src="about.jpg" alt="Prabakaran About" />
+      <div>
+        <p>I am Prabakaran S, a Biomedical Engineering graduate from Kongunadu College of Engineering and Technology. Passionate about blending engineering and healthcare, I’ve worked on projects like a Heart Attack Detection System, IoT-based Paralysis Care, and a Wearable Bio-Monitoring T-shirt. My hands-on experience through hospital internships and certifications in Arduino, biomedical hardware, and medical coding has strengthened my technical expertise. I am a quick learner, dedicated team player, and effective communicator. My goal is to contribute to innovative healthcare solutions that enhance patient care and medical efficiency through technology-driven research and development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accomplishments -->
+  <section id="accomplishments">
+    <h2>Accomplishments</h2>
+    <div class="certifications & Activities">
+      <h3>Certifications & Activities</h3>
+      <ul>
+        <li>NPTEL Certification: Enclosure Design of Electronics Equipments</li>
+        <li>Value Added Course: Biomedical Hardware Training, Medical Coding</li>
+        <li>Spoken Tutorial: Arduino, Biopython, Java, Introduction to Computers</li>
+        <li>Guvi: Data Visualization, Deep Learning, Machine Learning, Python zero to hero</li>
+      </ul>
+      <button id="openModalBtn" class="hero-btn">View Paper Presentations</button>
+      <button id="openInternshipBtn" class="hero-btn">View Internships</button>
+      <button id="openConferenceBtn" class="hero-btn">View Conferences</button>
+    </div>
+
+    <!-- Certificates Modal -->
+    <div id="certificateModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <div class="modal-slider">
+          <img src="cert1.jpg" class="cert-slide" />
+          <img src="cert2.jpg" class="cert-slide" />
+          <img src="cert3.jpg" class="cert-slide" />
+          <img src="cert4.jpeg" class="cert-slide" />
+          <img src="cert5.jpeg" class="cert-slide" />
+          <button class="prev" onclick="moveCertSlide(-1)">❮</button>
+          <button class="next" onclick="moveCertSlide(1)">❯</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Internship Modal -->
+    <div id="internshipModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeInternshipBtn">&times;</span>
+        <div class="modal-slider">
+          <img src="cert6.jpeg" class="intern-slide" />
+          <img src="cert7.jpeg" class="intern-slide" />
+          <img src="cert8.jpeg" class="intern-slide" />
+          <button class="prev" onclick="moveInternSlide(-1)">❮</button>
+          <button class="next" onclick="moveInternSlide(1)">❯</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conference Modal -->
+    <div id="conferenceModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeConferenceBtn">&times;</span>
+        <div class="modal-slider">
+          <img src="cert9.jpg" class="conf-slide" />
+          <img src="cert10.jpg" class="conf-slide" />
+          <button class="prev" onclick="moveConfSlide(-1)">❮</button>
+          <button class="next" onclick="moveConfSlide(1)">❯</button>
+        </div>
+      </div>
+    </div>
+
+    <ul>
+      <li>Industrial Visits: Prashan Medical Technologies, Atheenapandian Pvt Ltd, Pasteur Institute, KMCH, Velammal Hospital</li>
+      <li>Participated in 8km Mini Marathon</li>
+      <li>Attended Workshops, Seminars, and Webinars</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C Programming, SQL (Basics)</li>
+      <li>Arduino, Blynk, MS Office (Basics)</li>
+      <li>Empathy, Troubleshooting, Willingness to Learn</li>
+      <li>Languages: Tamil, English</li>
+    </ul>
+  </section>
+
+  <!-- Projects (Timeline) -->
+  <section id="projects">
+  <h2>Projects</h2>
+    <h2 style="text-align: center;">2021–2025</h2>
+    <div class="timeline-container">
+      <div class="timeline-entry left">
+        <div class="content-box">
+          <h3>Project Expo</h3>
+          <h4><em>Scientism'22</em> - Dept. of Science & Humanities</h4>
+          <p>Wireless power transfer using inductive coils for short-range energy delivery.</p>
+        </div>
+        <div class="timeline-year">2022</div>
+      </div>
+
+      <div class="timeline-entry right">
+        <div class="content-box">
+          <h3>Heart Attack Detection System</h3>
+          <em>5th Semester</em>
+          <p>Heart rate monitoring with Blynk alerts for detecting potential heart attacks.</p>
+        </div>
+        <div class="timeline-year">2023</div>
+      </div>
+
+      <div class="timeline-entry left">
+        <div class="content-box">
+          <h3>IoT-Enabled Paralysis Care</h3>
+          <em>6th Semester</em>
+          <p>Remote monitoring system using sensors for temperature and vitals via Thingspeak.</p>
+        </div>
+        <div class="timeline-year">2024</div>
+      </div>
+
+      <div class="timeline-entry right">
+        <div class="content-box">
+          <h3>Neonatal Incubator</h3>
+          <h4>2nd Place - College Hackathon</h4>
+          <p>Smart neonatal incubator for low-cost infant health monitoring and support.</p>
+        </div>
+        <div class="timeline-year">2024</div>
+      </div>
+
+      <div class="timeline-entry left">
+        <div class="content-box">
+          <h3>Wearable Bio-Monitoring T-Shirt</h3>
+          <em>8th Semester</em>
+          <p>SpO2, ECG, and temperature sensors integrated into clothing for health tracking.</p>
+        </div>
+        <div class="timeline-year">2025</div>
+      </div>
+
+      <div class="timeline-entry right">
+        <div class="content-box">
+          <h3>₹7,500 TNSCST Grant Project</h3>
+          <p>Cooling helmet prototype to reduce chemotherapy-induced hair loss.</p>
+        </div>
+        <div class="timeline-year">2025</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quotes -->
+  <section id="quotes" class="quote-section">
+    <h2 style="text-align: center;">Inspired Quotes</h2>
+    <div class="quote-slider">
+      <div class="quote-slide active">
+        <p>"Success is not the key to happiness. Happiness is the key to success."</p>
+        <span class="quote-author">– Albert Schweitzer</span>
+      </div>
+      <div class="quote-slide">
+        <p>"If you love what you are doing, you will be successful."</p>
+        <span class="quote-author">– Albert Schweitzer</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+<section id="contact" class="contact-section">
+  <div class="contact-wrapper">
+    <!-- Left Side: Info -->
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <p>I’m always open to discussing new projects and opportunities. Feel free to reach out!</p>
+      <div class="contact-icons">
+        <a href="mailto:prabakaranreal2003@gmail.com" target="_blank" class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/prabakaran-s-5b819a265" target="_blank" class="contact-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/innocent_paiyan__?igsh=MW95aHRoandzMGdndw==" target="_blank" class="contact-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Side: Form -->
+    <form action="https://formsubmit.co/prabakarankncet@gmail.com" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="number" placeholder="Your Number (Optional)" optional>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>&copy; 2025 Prabakaran S. All rights reserved.</footer>
+
+    <!-- Scripts -->
+  <script>
+    // Scroll reveal
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll("section");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.1 });
+      sections.forEach(section => observer.observe(section));
+    });
+
+    // Scroll progress
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      document.getElementById("progress-bar").style.width = scrollPercent + "%";
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 80,
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+
+    // Typing animation
+    const phrases = [
+      "A passionate and dedicated Biomedical",
+      "Engineering graduate seeking to work in a",
+      "growth-oriented environment where I can apply",
+      "my technical skills and contribute to the",
+      "healthcare innovations."
+    ];
+    const typedText = document.getElementById("typed-text");
+    let phraseIndex = 0, charIndex = 0, typing = true;
+
+    function typeLoop() {
+      if (typing) {
+        if (charIndex < phrases[phraseIndex].length) {
+          typedText.textContent += phrases[phraseIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(typeLoop, 100);
+        } else {
+          typing = false;
+          setTimeout(typeLoop, 100);
+        }
+      } else {
+        if (charIndex > 0) {
+          typedText.textContent = phrases[phraseIndex].substring(0, charIndex - 1);
+          charIndex--;
+          setTimeout(typeLoop, 0);
+        } else {
+          typing = true;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          setTimeout(typeLoop, 100);
+        }
+      }
+    }
+    document.addEventListener("DOMContentLoaded", typeLoop);
+
+    // Quote slider
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".quote-slide");
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+      });
+    }
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }, 4000);
+
+    // Certificate Modal
+    const modal = document.getElementById("certificateModal");
+    const openBtn = document.getElementById("openModalBtn");
+    const closeBtn = document.getElementById("closeModalBtn");
+    const certSlides = document.querySelectorAll(".cert-slide");
+    let certIndex = 0;
+
+    function showCertSlide(index) {
+      certSlides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        slide.style.display = "none";
+      });
+      certSlides[index].classList.add("active");
+      certSlides[index].style.display = "block";
+    }
+
+    function moveCertSlide(dir) {
+      certIndex = (certIndex + dir + certSlides.length) % certSlides.length;
+      showCertSlide(certIndex);
+    }
+
+    openBtn.onclick = () => {
+      modal.style.display = "block";
+      certIndex = 0;
+      showCertSlide(certIndex);
+    };
+
+    closeBtn.onclick = () => {
+      modal.style.display = "none";
+    };
+
+    window.onclick = (e) => {
+      if (e.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
+<script>
+  // Internship Slider Logic
+  const internshipSlider = document.getElementById("internshipSlider");
+  const internshipImages = internshipSlider.querySelectorAll("img");
+  let internshipIndex = 0;
+
+  document.getElementById("showInternshipBtn").addEventListener("click", () => {
+    internshipSlider.classList.remove("hidden");
+    internshipImages.forEach(img => img.classList.remove("active"));
+    internshipImages[0].classList.add("active");
+    internshipIndex = 0;
+  });
+
+  function moveSlideInternship(n) {
+    internshipImages[internshipIndex].classList.remove("active");
+    internshipIndex = (internshipIndex + n + internshipImages.length) % internshipImages.length;
+    internshipImages[internshipIndex].classList.add("active");
+  }
+
+  // Activate first image by default in both sliders
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector("#certificateSlider img")?.classList.add("active");
+    document.querySelector("#internshipSlider img")?.classList.add("active");
+  });
+</script>
+
+<script>
+  // Internship Modal
+  const internshipModal = document.getElementById("internshipModal");
+  const openInternBtn = document.getElementById("openInternshipBtn");
+  const closeInternBtn = document.getElementById("closeInternshipBtn");
+  const internSlides = document.querySelectorAll(".intern-slide");
+  let internIndex = 0;
+
+  function showInternSlide(index) {
+    internSlides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      slide.style.display = "none";
+    });
+    internSlides[index].classList.add("active");
+    internSlides[index].style.display = "block";
+  }
+
+  function moveInternSlide(dir) {
+    internIndex = (internIndex + dir + internSlides.length) % internSlides.length;
+    showInternSlide(internIndex);
+  }
+
+  openInternBtn.onclick = () => {
+    internshipModal.style.display = "block";
+    internIndex = 0;
+    showInternSlide(internIndex);
+  };
+
+  closeInternBtn.onclick = () => {
+    internshipModal.style.display = "none";
+  };
+
+  window.onclick = (e) => {
+    if (e.target == internshipModal) {
+      internshipModal.style.display = "none";
+    }
+  };
+</script>
+
+<script>
+  // Conference Modal
+  const conferenceModal = document.getElementById("conferenceModal");
+  const openConferenceBtn = document.getElementById("openConferenceBtn");
+  const closeConferenceBtn = document.getElementById("closeConferenceBtn");
+  const confSlides = document.querySelectorAll(".conf-slide");
+  let confIndex = 0;
+
+  function showConfSlide(index) {
+    confSlides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      slide.style.display = "none";
+    });
+    confSlides[index].classList.add("active");
+    confSlides[index].style.display = "block";
+  }
+
+  function moveConfSlide(dir) {
+    confIndex = (confIndex + dir + confSlides.length) % confSlides.length;
+    showConfSlide(confIndex);
+  }
+
+  openConferenceBtn.onclick = () => {
+    conferenceModal.style.display = "block";
+    confIndex = 0;
+    showConfSlide(confIndex);
+  };
+
+  closeConferenceBtn.onclick = () => {
+    conferenceModal.style.display = "none";
+  };
+
+  window.onclick = (e) => {
+    if (e.target == conferenceModal) {
+      conferenceModal.style.display = "none";
+    }
+  };
+</script>
+
+<script>
+  // Conference Modal
+  const conferenceModal = document.getElementById("conferenceModal");
+  const openConferenceBtn = document.getElementById("openConferenceBtn");
+  const closeConferenceBtn = document.getElementById("closeConferenceBtn");
+  const confSlides = document.querySelectorAll(".conf-slide");
+  let confIndex = 0;
+
+  function showConfSlide(index) {
+    confSlides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      slide.style.display = "none";
+    });
+    confSlides[index].classList.add("active");
+    confSlides[index].style.display = "block";
+  }
+
+  function moveConfSlide(dir) {
+    confIndex = (confIndex + dir + confSlides.length) % confSlides.length;
+    showConfSlide(confIndex);
+  }
+
+  openConferenceBtn.onclick = () => {
+    conferenceModal.style.display = "block";
+    confIndex = 0;
+    showConfSlide(confIndex);
+  };
+
+  closeConferenceBtn.onclick = () => {
+    conferenceModal.style.display = "none";
+  };
+
+  window.onclick = (e) => {
+    if (e.target == conferenceModal) {
+      conferenceModal.style.display = "none";
+    }
+  };
+</script>
+
+</body>
+</html>
