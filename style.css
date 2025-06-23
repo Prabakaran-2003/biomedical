@@ -1,19 +1,12 @@
-/* Reset & Base Styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: 'Inter', sans-serif;
-  background: #f8fafc;
-  color: #1f2937;
-  line-height: 1.6;
+  font-family: sans-serif;
+  background: #f1f5f9;
 }
 
 /* Scroll Progress */
@@ -27,13 +20,11 @@ body {
   z-index: 9999;
 }
 
-/* Header */
 header {
   background: #1f2937;
   color: white;
   padding: 1rem 2rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   position: sticky;
@@ -562,16 +553,45 @@ footer {
     border-bottom: 1px solid #374151;
   }
 
-  .nav-links.show {
+nav.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+@media (max-width: 768px) {
+  nav.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1f2937;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  nav.nav-links.show {
     display: flex;
   }
-
   .hamburger {
     display: flex;
   }
-
-  header {
-    position: relative;
-    z-index: 1000;
-  }
+}
+section {
+  padding: 3rem;
+  border-bottom: 1px solid #ccc;
 }
