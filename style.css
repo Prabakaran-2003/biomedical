@@ -524,9 +524,25 @@ footer {
   border-radius: 3px;
 }
 
-/* Mobile Nav Styles */
+/* Hamburger Styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Mobile Nav */
 @media (max-width: 768px) {
-  .nav-bar {
+  .nav-links {
     display: none;
     flex-direction: column;
     background-color: #1f2937;
@@ -535,16 +551,18 @@ footer {
     left: 0;
     width: 100%;
     padding: 1rem;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 999;
   }
 
-  .nav-bar a {
-    padding: 0.5rem 0;
+  .nav-links a {
     color: white;
-    text-align: left;
+    padding: 0.75rem 0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #374151;
   }
 
-  .nav-bar.active {
+  .nav-links.show {
     display: flex;
   }
 
@@ -554,5 +572,6 @@ footer {
 
   header {
     position: relative;
+    z-index: 1000;
   }
 }
