@@ -59,8 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ? "Light Mode"
       : "Dark Mode";
   });
-
- // Hamburger Menu Toggle
+  
 const hamburgerBtn = document.getElementById("hamburgerBtn");
 const navLinks = document.getElementById("navLinks");
 
@@ -68,7 +67,6 @@ hamburgerBtn.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
 
-// Optional: Hide menu on link click
 document.querySelectorAll("#navLinks a").forEach(link => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("show");
