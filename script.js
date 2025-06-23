@@ -66,6 +66,7 @@ const navLinks = document.getElementById("navLinks");
 hamburgerBtn.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
+
 document.querySelectorAll("#navLinks a").forEach(link => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("show");
