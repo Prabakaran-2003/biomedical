@@ -513,10 +513,8 @@ footer {
   background: white;
   border-radius: 2px;
 }
-
-/* Mobile Nav Behavior */
 @media (max-width: 768px) {
-  .nav-links {
+  #navLinks {
     display: none;
     flex-direction: column;
     background: #1f2937;
@@ -526,17 +524,11 @@ footer {
     width: 100%;
     padding: 1rem;
   }
-
-  .nav-links.show {
+  #navLinks.show {
     display: flex;
   }
-
   .hamburger {
     display: flex;
-  }
-
-  header {
-    position: relative;
   }
 }
 
