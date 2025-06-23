@@ -508,3 +508,45 @@ footer {
     width: 100%;
   }
 }
+
+/* === Mobile Menu === */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+    background: #1f2937;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    padding: 1rem;
+  }
+
+  .nav-bar.active {
+    display: flex;
+  }
+
+  #mobileMenuBtn {
+    display: flex;
+  }
+
+  header {
+    position: relative;
+  }
+}
