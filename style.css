@@ -509,7 +509,7 @@ footer {
   }
 }
 
-/* === Mobile Menu === */
+/* === Hamburger Menu === */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -524,25 +524,31 @@ footer {
   border-radius: 3px;
 }
 
-/* Responsive Nav */
+/* Mobile Nav Styles */
 @media (max-width: 768px) {
   .nav-bar {
     display: none;
     flex-direction: column;
-    background: #1f2937;
-    width: 100%;
+    background-color: #1f2937;
     position: absolute;
-    top: 60px;
+    top: 100%;
     left: 0;
-    z-index: 999;
+    width: 100%;
     padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+
+  .nav-bar a {
+    padding: 0.5rem 0;
+    color: white;
+    text-align: left;
   }
 
   .nav-bar.active {
     display: flex;
   }
 
-  #mobileMenuBtn {
+  .hamburger {
     display: flex;
   }
 
