@@ -15,26 +15,26 @@
 
 <header>
   <h1>Prabakaran S</h1>
-
-  <!-- Hamburger Button -->
-  <div id="mobileMenuBtn" class="hamburger">
+  
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburgerBtn">
     <span></span>
     <span></span>
     <span></span>
   </div>
 
-  <!-- Navigation -->
-  <nav class="nav-bar" id="navLinks">
+  <!-- Navigation Links -->
+  <nav class="nav-links" id="navLinks">
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#accomplishments">Accomplishments</a>
-    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
     <a href="#quotes">Quotes</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
-
+  
   <!-- Hero -->
   <section id="home" class="hero visible">
     <div class="hero-left">
@@ -517,19 +517,20 @@
 </script>
 
 <script>
-  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-  const navLinks = document.getElementById("navLinks");
+ // Hamburger Menu Toggle
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const navLinks = document.getElementById("navLinks");
 
-  mobileMenuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
+hamburgerBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
 
-  // Optional: Hide menu when link is clicked
-  document.querySelectorAll("#navLinks a").forEach(link => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("active");
-    });
+// Optional: Hide menu on link click
+document.querySelectorAll("#navLinks a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("show");
   });
+});
 </script>
 
 </body>
