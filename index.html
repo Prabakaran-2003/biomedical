@@ -13,10 +13,10 @@
   <!-- Scroll Progress Bar -->
   <div id="progress-bar"></div>
 
-  <header>
+<header>
   <h1>Prabakaran S</h1>
 
-  <!-- Mobile Menu Button -->
+  <!-- Hamburger Button -->
   <div id="mobileMenuBtn" class="hamburger">
     <span></span>
     <span></span>
@@ -515,9 +515,8 @@
     }
   };
 </script>
-  
+
 <script>
-  // Mobile Menu Toggle
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
   const navLinks = document.getElementById("navLinks");
 
@@ -525,8 +524,8 @@
     navLinks.classList.toggle("active");
   });
 
-  // Close menu when link is clicked (optional UX)
-  document.querySelectorAll(".nav-bar a").forEach(link => {
+  // Optional: Hide menu when link is clicked
+  document.querySelectorAll("#navLinks a").forEach(link => {
     link.addEventListener("click", () => {
       navLinks.classList.remove("active");
     });
