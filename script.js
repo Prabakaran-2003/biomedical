@@ -60,11 +60,17 @@ document.addEventListener("DOMContentLoaded", () => {
       : "Dark Mode";
   });
 
-  // === Mobile Menu Toggle ===
-  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-  const navLinks = document.getElementById("navLinks");
+ // Hamburger Menu Toggle
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const navLinks = document.getElementById("navLinks");
 
-  mobileMenuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+hamburgerBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+// Optional: Hide menu on link click
+document.querySelectorAll("#navLinks a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("show");
   });
 });
