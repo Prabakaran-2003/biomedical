@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="google-site-verification" content="8uEbPzSSLNY5jKZD2kTZ0Wq3nWQLLHEHqE3yYDyUshk" />
+  <!-- Meta SEO -->
+<meta name="description" content="Portfolio of Prabakaran S, a Biomedical Engineering graduate showcasing projects, skills, certifications, and internships.">
+<meta name="keywords" content="Prabakaran S, Biomedical Engineer, Biomedical Engineering Portfolio, IoT in Healthcare, Arduino Projects, Medical Devices, Final Year Project, Heart Attack Detection, Biomedical Projects">
+<meta name="author" content="Prabakaran S">
+
+  <!-- Open Graph / Facebook -->
+<meta property="og:title" content="Prabakaran S – Biomedical Engineering Portfolio">
+<meta property="og:description" content="Explore Prabakaran S's academic journey, biomedical projects, certifications, and technical skills.">
+<meta property="og:image" content="https://yourdomain.com/preview.jpg"> <!-- Replace with an actual preview image URL -->
+<meta property="og:url" content="https://yourdomain.com">
+<meta property="og:type" content="website">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Prabakaran S – Biomedical Engineer">
+<meta name="twitter:description" content="Explore my portfolio, biomedical projects and research interests.">
+<meta name="twitter:image" content="https://yourdomain.com/preview.jpg">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prabakaran S Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -245,6 +265,8 @@
   
  <!-- Footer -->
   <footer>&copy; 2025 Prabakaran S. All rights reserved.</footer>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=Prabakaran-2003.biomedical" />
+<img src="https://shields.io/badge/visitors-dynamic-brightgreen?style=flat&label=Visitors&logo=github" alt="visitor badge" />
 
     <!-- Scripts -->
   <script>
@@ -528,6 +550,11 @@ document.querySelectorAll("#navLinks a").forEach(link => {
     const preloader = document.getElementById("preloader");
     preloader.style.display = "none";
   });
+
+  document.getElementById("darkToggle").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+});
 </script>
 
 </body>
