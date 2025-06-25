@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
   background: #f1f5f9;
 }
 
@@ -455,7 +455,14 @@ section.visible {
     flex-direction: column;
   }
 }
-
+#preloader {
+  background: #f8fafc url('loader.gif') no-repeat center center;
+  background-size: 80px;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
 /* Footer */
 footer {
   text-align: center;
@@ -500,7 +507,7 @@ footer {
   }
 }
 
-/* Hamburger Icon */
+/* === Mobile Hamburger Menu === */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -514,7 +521,7 @@ footer {
   border-radius: 2px;
 }
 @media (max-width: 768px) {
-  #navLinks {
+  .nav-links {
     display: none;
     flex-direction: column;
     background: #1f2937;
@@ -523,8 +530,9 @@ footer {
     left: 0;
     width: 100%;
     padding: 1rem;
+    z-index: 999;
   }
-  #navLinks.show {
+  .nav-links.show {
     display: flex;
   }
   .hamburger {
