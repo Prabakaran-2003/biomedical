@@ -6,8 +6,10 @@
   <title>Prabakaran S Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <div id="preloader"></div>
   <header>
   <h1>Prabakaran S</h1>
   <div class="hamburger" id="hamburgerBtn">
@@ -31,14 +33,14 @@
     <div class="hero-left">
       <p class="tagline">I'm</p>
       <h1 class="name">Prabakaran S</h1>
-      <h2 class="title">Biomedical Engineer</h2>
-      <p class="desc"><span id="typed-text"></span><span class="cursor">|</span></p>
+      <h2 class="title"><span id="typed-text"></span><span class="cursor">|</span></h2>
+      <p class="desc">A passionate and dedicated Biomedical Engineering graduate seeking to work in a growth-oriented environment where I can apply my technical skills and contribute to the healthcare innovations.</p>
       <div class="hero-buttons">
         <a href="Prabakaran_Resume.pdf" download class="hero-btn">Resume</a>
       </div>
     </div>
     <div class="hero-right">
-      <img src="profile.jpg" alt="Prabakaran S" class="hero-img" />
+      <img src="profile.jpg" loading="lazy" alt="Prabakaran S" class="hero-img" />
     </div>
   </section>
   
@@ -46,7 +48,7 @@
   <section id="about">
     <h2>About</h2>
     <div class="about-content">
-      <img src="about.jpg" alt="Prabakaran About" />
+      <img src="about.jpg" loading="lazy" alt="Prabakaran About" />
       <div>
         <p>I am Prabakaran S, a Biomedical Engineering graduate from Kongunadu College of Engineering and Technology. Passionate about blending engineering and healthcare, I’ve worked on projects like a Heart Attack Detection System, IoT-based Paralysis Care, and a Wearable Bio-Monitoring T-shirt. My hands-on experience through hospital internships and certifications in Arduino, biomedical hardware, and medical coding has strengthened my technical expertise. I am a quick learner, dedicated team player, and effective communicator. My goal is to contribute to innovative healthcare solutions that enhance patient care and medical efficiency through technology-driven research and development.</p>
       </div>
@@ -74,11 +76,11 @@
       <div class="modal-content">
         <span class="close" id="closeModalBtn">&times;</span>
         <div class="modal-slider">
-          <img src="cert1.jpg" class="cert-slide" />
-          <img src="cert2.jpg" class="cert-slide" />
-          <img src="cert3.jpg" class="cert-slide" />
-          <img src="cert4.jpeg" class="cert-slide" />
-          <img src="cert5.jpeg" class="cert-slide" />
+          <img src="cert1.jpg" loading="lazy" class="cert-slide" />
+          <img src="cert2.jpg" loading="lazy" class="cert-slide" />
+          <img src="cert3.jpg" loading="lazy" class="cert-slide" />
+          <img src="cert4.jpeg" loading="lazy" class="cert-slide" />
+          <img src="cert5.jpeg" loading="lazy" class="cert-slide" />
           <button class="prev" onclick="moveCertSlide(-1)">❮</button>
           <button class="next" onclick="moveCertSlide(1)">❯</button>
         </div>
@@ -90,9 +92,9 @@
       <div class="modal-content">
         <span class="close" id="closeInternshipBtn">&times;</span>
         <div class="modal-slider">
-          <img src="cert6.jpeg" class="intern-slide" />
-          <img src="cert7.jpeg" class="intern-slide" />
-          <img src="cert8.jpeg" class="intern-slide" />
+          <img src="cert6.jpeg" loading="lazy" class="intern-slide" />
+          <img src="cert7.jpeg" loading="lazy" class="intern-slide" />
+          <img src="cert8.jpeg" loading="lazy" class="intern-slide" />
           <button class="prev" onclick="moveInternSlide(-1)">❮</button>
           <button class="next" onclick="moveInternSlide(1)">❯</button>
         </div>
@@ -104,8 +106,8 @@
       <div class="modal-content">
         <span class="close" id="closeConferenceBtn">&times;</span>
         <div class="modal-slider">
-          <img src="cert9.jpg" class="conf-slide" />
-          <img src="cert10.jpg" class="conf-slide" />
+          <img src="cert9.jpg" loading="lazy" class="conf-slide" />
+          <img src="cert10.jpg" loading="lazy" class="conf-slide" />
           <button class="prev" onclick="moveConfSlide(-1)">❮</button>
           <button class="next" onclick="moveConfSlide(1)">❯</button>
         </div>
@@ -137,7 +139,7 @@
     <div class="timeline-container">
       <div class="timeline-entry left">
         <div class="content-box">
-          <h3>Project Expo</h3>
+          <h3>Wireless Power Transmitter</h3>
           <h4><em>Scientism'22</em> - Dept. of Science & Humanities</h4>
           <p>Wireless power transfer using inductive coils for short-range energy delivery.</p>
         </div>
@@ -165,7 +167,7 @@
       <div class="timeline-entry right">
         <div class="content-box">
           <h3>Neonatal Incubator</h3>
-          <h4>2nd Place - College Hackathon</h4>
+          <h4>2nd Place - ₹2,000 Grant Prize by Biomedical Engineering Department</h4>
           <p>Smart neonatal incubator for low-cost infant health monitoring and support.</p>
         </div>
         <div class="timeline-year">2024</div>
@@ -182,7 +184,8 @@
 
       <div class="timeline-entry right">
         <div class="content-box">
-          <h3>₹7,500 TNSCST Grant Project</h3>
+          <h3>Prevention of Chemotherapy-Induced Alopecia by Scalp Cooling Helmet</h3>
+          <h4>₹7,500 Grant Prize by TNSCST</h4>
           <p>Cooling helmet prototype to reduce chemotherapy-induced hair loss.</p>
         </div>
         <div class="timeline-year">2025</div>
@@ -214,9 +217,10 @@
       <h2>Get In Touch</h2>
       <p>I’m always open to discussing new projects and opportunities. Feel free to reach out!</p>
       <div class="contact-icons">
-        <a href="mailto:prabakaranreal2003@gmail.com" target="_blank" class="contact-icon">
+        <a href="mailto:prabakaranreal2003@gmail.com" target="_blank" class="contact-icon" aria-label="Send Email">
           <i class="fas fa-envelope"></i>
         </a>
+
         <a href="https://www.linkedin.com/in/prabakaran-s-5b819a265" target="_blank" class="contact-icon">
           <i class="fab fa-linkedin-in"></i>
         </a>
@@ -230,7 +234,7 @@
     <form action="https://formsubmit.co/prabakarankncet@gmail.com" method="POST" class="contact-form">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
-      <input type="text" name="number" placeholder="Your Number (Optional)" optional>
+      <input type="number" name="number" placeholder="Your Contact Number (Optional)" optional>
       <textarea name="message" placeholder="Your Message" required></textarea>
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
@@ -281,11 +285,7 @@
 
     // Typing animation
     const phrases = [
-      "A passionate and dedicated Biomedical",
-      "Engineering graduate seeking to work in a",
-      "growth-oriented environment where I can apply",
-      "my technical skills and contribute to the",
-      "healthcare innovations."
+      "Biomedical Engineer"
     ];
     const typedText = document.getElementById("typed-text");
     let phraseIndex = 0, charIndex = 0, typing = true;
@@ -295,16 +295,16 @@
         if (charIndex < phrases[phraseIndex].length) {
           typedText.textContent += phrases[phraseIndex].charAt(charIndex);
           charIndex++;
-          setTimeout(typeLoop, 100);
+          setTimeout(typeLoop, 150);
         } else {
           typing = false;
-          setTimeout(typeLoop, 100);
+          setTimeout(typeLoop, 1000);
         }
       } else {
         if (charIndex > 0) {
           typedText.textContent = phrases[phraseIndex].substring(0, charIndex - 1);
           charIndex--;
-          setTimeout(typeLoop, 0);
+          setTimeout(typeLoop, 10);
         } else {
           typing = true;
           phraseIndex = (phraseIndex + 1) % phrases.length;
@@ -522,5 +522,13 @@ document.querySelectorAll("#navLinks a").forEach(link => {
   });
 });
 </script>
+
+<script>
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    preloader.style.display = "none";
+  });
+</script>
+
 </body>
 </html>
