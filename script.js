@@ -52,10 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // === Dark Mode Toggle ===
-  const darkModeToggle = document.getElementById("darkModeToggle");
-  darkModeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    darkModeToggle.textContent = document.body.classList.contains("dark-mode")
-      ? "Light Mode"
-      : "Dark Mode";
-  });
+  document.getElementById("darkToggle").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+});
